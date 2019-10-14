@@ -26,7 +26,6 @@ class PigLatinizer
       word = word.slice(1..-1) + word.slice(0)
     end
     word = word + "ay"
-    binding.pry
   end
 
   def piglatinize_sentence(sentence)
