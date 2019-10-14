@@ -20,7 +20,7 @@ class PigLatinizer
     #elsif
       #remove the first letter, add it to the end and add ay
       #word = word.slice(3..-1) + word.slice(0,3)
-    elsif vowel(word[0]) && vowel(word[1])
+    elsif !vowel(word[0]) && !vowel(word[1])
       word = word.slice(2..-1) + word.slice(0,2)
     else
       word = word.slice(1..-1) + word.slice(0)
