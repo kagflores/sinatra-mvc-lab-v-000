@@ -2,7 +2,7 @@ class PigLatinizer
   attr_reader :text
 
   def piglatinize(text)
-    if text.split("").length ==1
+    if text.split(" ").length ==1
       piglatinize_word(text)
     else
       piglatinize_sentence(text)
