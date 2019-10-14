@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
-    if word.scan(/[aeiou]/)
+    if word.scan(/[aeiouAEIOU]/)
       #leave the vowel and add way at the end
 
     else
