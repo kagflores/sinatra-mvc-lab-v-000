@@ -7,9 +7,8 @@ class PigLatinizer
 
   def piglatinize_word(word)
     if word.scan(/[aeiouAEIOU]/)
-      #leave the vowel and add way at the end
+      #leave the vowel and add w-ay at the end
       word = word + "w"
-
     else
       #remove the first letter, add it to the end and add ay
     end
