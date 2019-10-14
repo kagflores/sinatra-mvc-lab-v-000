@@ -13,7 +13,7 @@ class PigLatinizer
     if vowel(word[0])
       #leave the vowel and add w-ay at the end
       word = word + "w"
-    #elsif 
+    #elsif
       #remove the first letter, add it to the end and add ay
       #word = word.slice(3..-1) + word.slice(0,3)
     elsif vowel(word[0]) && vowel(word[1])
