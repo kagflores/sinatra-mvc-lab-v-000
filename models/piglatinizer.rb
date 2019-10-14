@@ -9,12 +9,12 @@ class PigLatinizer
     if word.scan(/[aeiouAEIOU]/)
       #leave the vowel and add w-ay at the end
       word = word + "w"
-    elsif       
+    elsif
       #remove the first letter, add it to the end and add ay
       word = word.slice(3..-1) + word.slice(0,3)
     elsif #2
     else
-      word = word.slice(1..-1) + word.slice(0)      
+      word = word.slice(1..-1) + word.slice(0)
     end
     word = word + "ay"
   end
