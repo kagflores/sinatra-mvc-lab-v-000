@@ -1,8 +1,12 @@
 class PigLatinizer
   attr_reader :text
 
-  def initialize(text)
-    @text = text
+  def piglatinize(text)
+    if text.split("").length ==1
+      piglatinize_word(text)
+    else
+      piglatinize_sentence(text)
+    end
   end
 
   def vowel(char)
